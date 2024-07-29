@@ -106,6 +106,22 @@
     color: var(--font-color);
 }
 
+.dark-icon{
+    background-color: var(--dark-color);
+    padding: 10px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.dark-icon i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 /* Smart-Phone Size Design in CSS */
 @media (max-width: 600px){
 
