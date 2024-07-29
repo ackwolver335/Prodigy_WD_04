@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Storing necessary Data in root block */
+
+:root{
+    --general-font: "Inter";
+    --heading-font: "Montserrat";
+    --para-font: "Fredoka";
+    --font-color: #9615DB;
+    --block-background: #d2d3d3;
+    --head-color1: #555759;
+    --head-color2: #7D7F80;
+    --dark-color: #2D3032;
+}
+
+.header{
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--dark-color);
+    width: 100%;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: white;
+    font-size: 25px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+}
+
+.menuList{
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    transition: all 0.8s;
+    list-style-type: none;
+}
+
+.menuList li{
+    padding: 5px;
+    border: 1px transparent solid;
+    border-radius: 0px;
+    transition: 0.6s;
+}
+
+.menuList li:hover{
+    border-bottom-color: var(--font-color);
+}
+
+.menuList li a{
+    text-decoration: none;
+    color: white;
+
+    font-family: var(--general-font);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: 0.6s;
+}
+
+.menuList li a:hover{
+    color: var(--font-color);
+}
+
+.header-part2{
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.icon-def{
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.name{
+    color: white;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    letter-spacing: 0.3mm;
+
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.name:hover{
+    color: var(--font-color);
+}
+
+/* Smart-Phone Size Design in CSS */
+@media (max-width: 600px){
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menuList{
+        flex-direction: column;
+        position: absolute;
+        top: 80%;
+        gap: 0px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menuList li{
+        padding: 10px;
+    }
+
+    .menuList li a{
+        color: var(--dark-color);
+    }
+}
