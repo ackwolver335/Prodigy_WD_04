@@ -23,7 +23,6 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--dark-color);
     width: 100%;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .menu-icon i{
-    color: white;
+    color: var(--dark-color);
     font-size: 25px;
     padding: 5px 15px 5px 15px;
     cursor: pointer;
@@ -57,12 +56,12 @@
 }
 
 .menuList li:hover{
-    border-bottom-color: var(--font-color);
+    border-bottom-color: var(--dark-color);
 }
 
 .menuList li a{
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
 
     font-family: var(--general-font);
     font-size: 14px;
@@ -73,7 +72,7 @@
 }
 
 .menuList li a:hover{
-    color: var(--font-color);
+    color: var(--dark-color);
 }
 
 .header-part2{
@@ -83,31 +82,25 @@
     align-items: center;
     flex-direction: row-reverse;
     gap: 10px;
+    cursor: pointer;
 }
 
 .icon-def{
-    background-color: white;
-    width: 35px;
-    height: 35px;
+    background-color: var(--font-color);
+    width: 30px;
+    height: 30px;
     border-radius: 30px;
 }
 
 .name{
-    color: white;
+    color: var(--dark-color);
     font-family: var(--heading-font);
     text-transform: uppercase;
     letter-spacing: 0.3mm;
-
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.name:hover{
-    color: var(--font-color);
 }
 
 .dark-icon{
-    background-color: var(--dark-color);
+    background-color: var(--font-color);
     padding: 10px;
     position: absolute;
     bottom: 0%;
