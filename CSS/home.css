@@ -17,12 +17,14 @@
 }
 
 .header{
-    position: fixed;
+    position: sticky;
+    top: 0;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    background-color: white;
     width: 100%;
 }
 
@@ -102,7 +104,7 @@
 .dark-icon{
     background-color: var(--font-color);
     padding: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     right: 0%;
     margin: 10px;
@@ -113,6 +115,59 @@
     color: white;
     font-size: 24px;
     cursor: pointer;
+
+}
+
+.myBlock{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.firstHalf{
+    background-color: var(--font-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+
+    border-radius: 0 5px 5px 0;
+}
+
+.secondHalf{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+    gap: 30px;
+    margin: 30px;
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--dark-color);
+}
+
+.part1{
+    color: var(--font-color);
+    font-family: var(--heading-font);
+}
+
+.part2{
+    color: var(--dark-color);
+    font-family: var(--para-font);
+    font-size: 16px;
+}
+
+.frame-img{
+    width: 250px;
+    height: 250px;
+    border: 3px white solid;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px var(--dark-color),-2px -2px 10px var(--dark-color);
 }
 
 /* Smart-Phone Size Design in CSS */
