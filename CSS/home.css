@@ -102,7 +102,7 @@
 }
 
 .dark-icon{
-    background-color: var(--font-color);
+    background-color: var(--dark-color);
     padding: 10px;
     position: fixed;
     bottom: 0%;
@@ -125,7 +125,7 @@
 }
 
 .firstHalf{
-    background-color: var(--font-color);
+    background-color: var(--head-color1);
 
     display: flex;
     align-items: center;
@@ -187,7 +187,270 @@
     border-radius: 200px;
     padding: 10px;
     margin: 40px;
-    box-shadow: 2px 2px 10px var(--dark-color),-2px -2px 10px var(--dark-color);
+    box-shadow: 2px 2px 10px var(--font-color),-2px -2px 10px var(--font-color);
+}
+
+.skill-set{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.skill-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.skill-heading h1{
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+
+    text-transform: uppercase;
+    letter-spacing: 0.2mm;
+}
+
+.skill-heading div{
+    background-color: var(--head-color1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.skill-heading div i{
+    font-size: 30px;
+    color: white;
+}
+
+.skill-block{
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+    padding: 10px;
+}
+
+.main-skill-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    padding: 5px;
+}
+
+.skill-block-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    background-color: var(--font-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.skill-block-data h3{
+    padding: 5px;
+    font-size: 20px;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    color: white;
+}
+
+.skill-block-data h4{
+    font-size: 16px;
+    font-family: var(--general-font);
+    color: white;
+    text-transform: uppercase;
+}
+
+.skill-block-data p{
+    font-family: var(--para-font);
+    font-size: 14px;
+    text-align: center;
+}
+
+.know-more{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.know-more h5{
+    font-family: var(--general-font);
+    font-size: 16px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.know-more i{
+    font-size: 20px;
+    color: var(--dark-color);
+    transition: 0.6s;
+}
+
+.know-more i:hover{
+    padding-left: 10px;
+}
+
+.projects{
+    margin: 10px;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.project-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-heading h1{
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+}
+
+.project-heading div{
+    background-color: var(--head-color1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project-heading div i{
+    font-size: 30px;
+    color: white;
+}
+
+.main-project-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin: 30px;
+    gap: 40px;
+}
+
+.side-img{
+    width: 600px;
+    height: 350px;
+
+    border-radius: 10px 0 10px 0;
+    box-shadow: 2px 2px 10px var(--font-color);
+}
+
+.site-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 20px;
+}
+
+.site-data h3{
+    color: var(--dark-color);
+    font-size: 30px;
+    font-family: var(--heading-font);
+
+    text-transform: uppercase;
+    letter-spacing: 0.2mm;
+}
+
+.site-data p{
+    color: var(--font-color);
+    font-family: var(--para-font);
+    font-weight: 550;
+    text-align: center;
+    font-size: 15px;
+}
+
+.site-data a ul{
+    list-style-type: none;
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-data a{
+    text-decoration: none;
+}
+
+.site-data a ul li{
+    color: var(--dark-color);
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: var(--general-font);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.visit-site{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--dark-color);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.visit-site h4{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1mm;
+
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--general-font);
+}
+
+.visit-site div i{
+    color: white;
+    font-size: 23px;
+}
+
+.explore-more{
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 5px;
+}
+
+.explore-more div a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    padding: 6px;
+
+    border: 2px var(--font-color) solid;
+    border-radius: 5px;
+}
+
+.explore-more div a h3{
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-family: var(--general-font);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.explore-more div a i{
+    color: var(--font-color);
+    font-size: 22px;
 }
 
 /* Smart-Phone Size Design in CSS */
@@ -203,7 +466,6 @@
         top: 80%;
         gap: 0px;
         padding: 20px;
-        width: 100%;
         text-align: center;
         background-color: white;
         border-radius: 20px;
