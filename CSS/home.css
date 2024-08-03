@@ -511,6 +511,38 @@
         margin: 10px;
         padding: 8px;
     }
+
+    .main-project-content{
+        margin: 20px;
+    }
+
+    .skill-block{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hidden1{
+        display: none;
+    }
+
+    .main-project-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .site-data h3{
+        font-size: 23px;
+    }
+
+    .site-data p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .side-img{
+        height: 250px;
+        width: 400px;
+    }
 }
 
 /* Tablets Devices Width Session */
